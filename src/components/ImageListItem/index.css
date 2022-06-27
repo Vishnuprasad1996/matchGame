@@ -1,0 +1,16 @@
+.list-item {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.thumbnail-image {
+  height: 70px;
+  width: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-image {
+    height: 150px;
+    width: 150px;
+  }
+}
