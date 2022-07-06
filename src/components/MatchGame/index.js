@@ -337,9 +337,7 @@ class MatchGame extends Component {
   }
 
   onClickPlayAgain = () => {
-    this.setState({isTimerRunning: true, timeElapsedInSeconds: 60, score: 0})(
-      this.componentDidMount(),
-    )
+    this.setState({isTimerRunning: true, timeElapsedInSeconds: 60, score: 0})
   }
 
   renderGameOverMode = () => {
@@ -385,8 +383,9 @@ class MatchGame extends Component {
             </li>
             <li className="nav-list-item">
               <div className="score-cont">
-                <p className="nav-bar-score-texts">Score: </p>
-                <p className="nav-bar-score">{score}</p>
+                <p className="nav-bar-score-texts">
+                  Score: <span className="nav-bar-score">{score}</span>
+                </p>
                 <img
                   className="timer-icon"
                   src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png "
